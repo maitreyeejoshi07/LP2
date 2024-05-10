@@ -1,0 +1,28 @@
+public class CurrencyConverter {
+    public static Decimal USD_TO_EUR = 0.85;
+    public static Decimal EUR_TO_USD = 1.18;
+    public static Decimal USD_TO_INR = 80.5;
+    public static Decimal INR_TO_USD = 0.013;
+    
+    public static Decimal convertUSDtoEUR(Decimal USD){
+        return USD * USD_TO_EUR;
+    }
+    
+    public static Decimal convertEURtoUSD(Decimal EUR){
+        return EUR * EUR_TO_USD;
+    }
+    
+    public static Decimal convertUSDtoINR(Decimal USD){
+        return USD * USD_TO_INR;
+    }
+    
+    public static Decimal convertINRtoUSD(Decimal INR){
+        return INR * INR_TO_USD;
+    }
+}
+
+//Decimal USD = 100.0;
+//Decimal EUR = CurrencyConverter.convertUSDtoEUR(USD);
+//System.debug('100 USD  = ' + EUR + 'EUR'); 
+//Decimal INR = CurrencyConverter.convertUSDtoINR(USD);
+//System.debug('100 USD = ' + INR + 'INR);

@@ -1,0 +1,22 @@
+public class GreatestInThree {
+    public static Integer findGreatest(Integer num1, Integer num2, Integer num3)
+    {
+        Integer greatest = num1;
+        
+        if(num2 > greatest)
+        {
+            greatest = num2;
+        }
+        
+        if(num3 > greatest)
+        {
+            greatest = num3;
+        }
+        
+        return greatest;
+    }
+
+}
+
+//Integer g = GreatestInThree.findGreatest(1, 5, 3);
+//System.debug('Greatest number: ' + g);
